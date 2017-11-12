@@ -4,7 +4,7 @@ const { GraphQLObjectType, GraphQLID } = graphql;
 const RootQueryType = new GraphQLObjectType({
   name: 'RootQueryType',
   fields: {
-    unnecessaryField: { type: GraphQLId }
+    unnecessaryField: { type: GraphQLID }
   }
 });
 
