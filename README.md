@@ -1,0 +1,1 @@
+A basic GRAPH QL authentication demonstration
