@@ -1,3 +1,5 @@
+import { GraphQLBoolean } from 'graphql/type/scalars';
+
 const graphql = require('graphql');
 
 const {
@@ -28,6 +30,10 @@ const mutation = new GraphQLObjectType({
                 req.logout;
                 return user;
             }            
+        },
+        login: {
+            type: UserType,
+
         }
     }
 });
