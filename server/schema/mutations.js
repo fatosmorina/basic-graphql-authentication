@@ -33,7 +33,10 @@ const mutation = new GraphQLObjectType({
         },
         login: {
             type: UserType,
-
+            args: {
+                email: { type: GraphQLString },
+                password: { type: GraphQLString }
+            }
         }
     }
 });
