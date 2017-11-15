@@ -1,5 +1,3 @@
-import { GraphQLBoolean } from 'graphql/type/scalars';
-
 const graphql = require('graphql');
 
 const {
