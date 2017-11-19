@@ -7,9 +7,7 @@ const {
 const UserType = new GraphQLObjectType({
     name: 'UserType',
     fields: {
-        email: {
-            type: GraphQLString
-        }
+        email: { type: GraphQLString }
     }
 });
 
