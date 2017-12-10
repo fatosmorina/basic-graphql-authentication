@@ -7,7 +7,14 @@ class Header extends Component {
         const { loading, user } = this.props.data;
 
         if (loading) { return <div />; }
+        
+        if (user){
+            return <div>Logout</div>;
+        } 
 
+        return (
+            <div>You are not signed in yet.</div>
+        );
 
     
     }
