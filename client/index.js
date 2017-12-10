@@ -6,6 +6,13 @@ import { Router, hashHistory, Route, IndexRoute } from "react-router";
 
 import App from './components/App';
 
+const networkInterface = createNetworkInterface({
+  uri: '/graphql',
+  opts: {
+    credentials: 'same-origin'
+  }
+});
+
 const client = new ApolloClient({
   dataIdFromObject: object => object.id
 });
