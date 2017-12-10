@@ -4,12 +4,12 @@ import query from '../queries/CurrentUser';
 
 class Header extends Component {
     render(){
-        console.log(this.props.data);
-        
         return(
-            <div>
-                Header
-            </div>
+            <nav>
+                <div className="nav-wrapper">
+                    {this.renderButtons()}
+                </div>
+            </nav>
         );
     }
 }
