@@ -4,9 +4,11 @@ import query from '../queries/CurrentUser';
 
 class Header extends Component {
     renderButtons(){
-        if (this.props.data.loading){
-            return <div />;
-        }
+        const { loading, user } = this.props.data;
+
+        if (loading) { return <div />; }
+
+
     
     }
 
