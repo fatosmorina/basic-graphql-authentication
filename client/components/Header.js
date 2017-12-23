@@ -20,6 +20,11 @@ class Header extends Component {
                         Register
                     </Link>
                 </li>
+                <li>
+                    <Link to="/login">
+                        Login
+                    </Link>
+                </li>
             </div>
         );
     }
