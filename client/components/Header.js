@@ -14,10 +14,14 @@ class Header extends Component {
         } 
 
         return (
-            <div>You are not signed in yet.</div>
+            <div>
+                <li>
+                    <Link to="/signup">
+                        Register
+                    </Link>
+                </li>
+            </div>
         );
-
-    
     }
 
     render(){
