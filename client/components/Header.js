@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { graphql } from 'react-apollo';
 import query from '../queries/CurrentUser';
 import { Link } from 'react-router';
+import mutation from '../mutations/Logout';
 
 class Header extends Component {
     handleLogout(){
