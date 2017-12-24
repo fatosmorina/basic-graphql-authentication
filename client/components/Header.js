@@ -4,7 +4,11 @@ import query from '../queries/CurrentUser';
 import { Link } from 'react-router';
 
 class Header extends Component {
-    
+    handleLogout(){
+        this.props.mutate({
+
+        });
+    }   
 
     renderButtons(){
         const { loading, user } = this.props.data;
