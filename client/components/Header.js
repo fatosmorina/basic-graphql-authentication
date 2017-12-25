@@ -54,4 +54,6 @@ class Header extends Component {
     }
 }
 
-export default graphql(query)(Header);
+export default graphql(mutation)(
+    graphql(query)(Header)
+);
