@@ -15,6 +15,10 @@ class AuthForm extends Component {
                     <label> Email </label>
                     <input />
                   </div>
+                  <div className="input-field">
+                    <label> Password </label>
+                    <input />
+                  </div>
                 </form>
             </div>
         );
