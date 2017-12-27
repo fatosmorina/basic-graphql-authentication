@@ -9,8 +9,11 @@ class AuthForm extends Component {
 
     render(){
         return(
-            <form>
-            </form>
+            <div className="row">
+                <form className="col s4">
+
+                </form>
+            </div>
         );
     }
 
