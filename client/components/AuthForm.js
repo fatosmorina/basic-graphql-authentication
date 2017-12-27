@@ -12,7 +12,8 @@ class AuthForm extends Component {
             <div className="row">
                 <form className="col s4">
                   <div className="input-field">
-                    
+                    <label> Email </label>
+                    <input />
                   </div>
                 </form>
             </div>
