@@ -17,7 +17,7 @@ class AuthForm extends Component {
                   </div>
                   <div className="input-field">
                     <label> Password </label>
-                    <input value={this.state.password} />
+                    <input value={this.state.password} onChange={e => e.setState({ password: e.target.value }) } />
                   </div>
                 </form>
             </div>
