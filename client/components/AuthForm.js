@@ -19,6 +19,7 @@ class AuthForm extends Component {
                     <label> Password </label>
                     <input value={this.state.password} onChange={e => e.setState({ password: e.target.value }) } />
                   </div>
+                  <button className="btn">Submit</button>
                 </form>
             </div>
         );
