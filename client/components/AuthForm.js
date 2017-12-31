@@ -18,7 +18,7 @@ class AuthForm extends Component {
             <div className="row">
                 <form onSubmit={this.onSubmit.bind(this)} lassName="col s6">
                   <div className="input-field">
-                    <input value={this.state.email} onChange={e => e.setState({ email: e.target.value })} />
+                    <input placeHolder="email" value={this.state.email} onChange={e => e.setState({ email: e.target.value })} />
                   </div>
                   <div className="input-field">
                     <label> Password </label>
