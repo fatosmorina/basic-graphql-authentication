@@ -14,7 +14,7 @@ class LoginForm extends Component {
         return(
             <div className="container">
              <h3>Login form</h3>
-                <AuthForm />
+                <AuthForm onSubmit={this.onSubmit.bind(this)}/>
             </div>
         );
     }
