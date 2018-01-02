@@ -5,6 +5,12 @@ import { graphql } from 'react-apollo';
 import query from '../queries/CurrentUser';
 
 class LoginForm extends Component {
+    constructor(props){
+        super(props);
+
+        this.state = { errors: [] };
+    }
+
     onSubmit({ email, password }){
         this.props.mutate({
             variables: { email, password },
