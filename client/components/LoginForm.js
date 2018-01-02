@@ -25,7 +25,7 @@ class LoginForm extends Component {
         return(
             <div className="container">
              <h3>Login form</h3>
-                <AuthForm onSubmit={this.onSubmit.bind(this)}/>
+                <AuthForm errors={this.state.errors} onSubmit={this.onSubmit.bind(this)}/>
             </div>
         );
     }
