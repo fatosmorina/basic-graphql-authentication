@@ -17,6 +17,7 @@ class LoginForm extends Component {
             refetchQueries: [{ query }]
         }).catch(result => {
             const errors = result.graphQLErrors.map(error => error.message);
+            this.setState({ errors });
         } );
     }
 
