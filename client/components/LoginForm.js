@@ -9,7 +9,9 @@ class LoginForm extends Component {
         this.props.mutate({
             variables: { email, password },
             refetchQueries: [{ query }]
-        })
+        }).catch(result => {
+            const errors = result.graphQLErrors.map(error => error.message);
+        } );
     }
 
     render(){
