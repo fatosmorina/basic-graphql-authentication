@@ -23,9 +23,10 @@ class AuthForm extends Component {
                   <div className="input-field">
                     <input placeholder="password" type="password" value={this.state.password} onChange={e => this.setState({ password: e.target.value }) } />
                   </div>
-
+                 <div className="errors">
                     { this.props.errors( error => <div key={error}> {error}</div>) }
-                  <button className="btn">Submit</button>
+                 </div>
+                <button className="btn">Submit</button>
                 </form>
             </div>
         );
