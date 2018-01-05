@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-
+import React, { Component } from 'react';
+import AuthForm form './AuthForm';
 
 class SignupForm extends Component{
     render(){
