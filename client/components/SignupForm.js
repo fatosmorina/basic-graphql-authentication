@@ -5,6 +5,8 @@ class SignupForm extends Component{
     render(){
         return(
             <div>
+                <h3> Sign up</h3>
+                <AuthForm />
             </div>
         )
     }
