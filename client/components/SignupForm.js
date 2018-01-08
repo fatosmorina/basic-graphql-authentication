@@ -5,9 +5,11 @@ import mutation from '../mutations/Signup';
 
 class SignupForm extends Component{
     onSubmit({ email, password }){
-
+        this.props.mutate({
+            variables: { email, password }
+        });
     }
-    
+
     render(){
         return(
             <div>
