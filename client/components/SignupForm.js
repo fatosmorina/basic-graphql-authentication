@@ -4,11 +4,15 @@ import graphql from 'react-apollo';
 import mutation from '../mutations/Signup';
 
 class SignupForm extends Component{
+    onSubmit({ email, password }){
+
+    }
+    
     render(){
         return(
             <div>
                 <h3> Sign up</h3>
-                <AuthForm />
+                <AuthForm onSubmit={this.onSubmit.bind(this)} />
             </div>
         )
     }
