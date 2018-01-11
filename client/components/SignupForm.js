@@ -7,6 +7,9 @@ class SignupForm extends Component{
     onSubmit({ email, password }){
         this.props.mutate({
             variables: { email, password }
+        }).catch(result => {
+            const errors = result.graphQLErrors.messages;
+            this.setState({ errors });
         });
     }
 
