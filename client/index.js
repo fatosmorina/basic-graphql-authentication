@@ -28,6 +28,8 @@ const Root = () => {
         <Route path="/" component={App}>
           <Route path="login" component={LoginForm} />
           <Route path="signup" component={SignupForm} />
+          <Route path="dashboard" component={Dashboard} />
+        </Route>
         </Route>
       </Router>
     </ApolloProvider>
