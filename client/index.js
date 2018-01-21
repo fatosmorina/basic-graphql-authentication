@@ -30,7 +30,6 @@ const Root = () => {
           <Route path="signup" component={SignupForm} />
           <Route path="dashboard" component={Dashboard} />
         </Route>
-        </Route>
       </Router>
     </ApolloProvider>
   );
