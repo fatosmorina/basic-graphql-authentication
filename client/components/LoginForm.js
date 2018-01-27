@@ -4,7 +4,7 @@ import AuthForm from './AuthForm';
 class LoginForm extends Component {
     render(){
         return(
-            <div>
+            <div className="container">
                 Login form
             </div>
         );
