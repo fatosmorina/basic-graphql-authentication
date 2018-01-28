@@ -10,7 +10,12 @@ export default WrappedComponent => {
         hashHistory.push("/login");
       }
     }
-  }
+
+    render(){
+        return <WrappedComponent {...this.props} />;
+    }
+
+    }
 };
 
 graphql(query)(RequireAuth);
