@@ -11,4 +11,4 @@ class RequireAuth extends Component {
     }
 }
 
-export default RequireAuth;
+graphql(query)(RequireAuth);
