@@ -8,6 +8,7 @@ import App from './components/App';
 import LoginForm from './components/LoginForm';
 import SignupForm from "./components/SignupForm";
 import Dashboard from './components/Dashboard';
+import requireAuth from './components/requireAuth';
 
 const networkInterface = createNetworkInterface({
   uri: '/graphql',

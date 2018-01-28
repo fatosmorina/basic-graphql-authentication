@@ -11,11 +11,10 @@ export default WrappedComponent => {
       }
     }
 
-    render(){
-        return <WrappedComponent {...this.props} />;
+    render() {
+      return <WrappedComponent {...this.props} />;
     }
-
-    }
+  }
 };
 
 graphql(query)(RequireAuth);
