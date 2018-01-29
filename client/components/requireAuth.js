@@ -3,7 +3,7 @@ import { graphql } from "react-apollo";
 import query from "../queries/CurrentUser";
 import { hashHistory } from "react-router";
 
-export default WrappedComponent => {
+export default (WrappedComponent) => {
   class RequireAuth extends Component {
     componentDidMount() {
       if (!this.props.data.loading && !this.props.data.user) {
