@@ -15,6 +15,6 @@ export default (WrappedComponent) => {
       return <WrappedComponent {...this.props} />;
     }
   }
+  return graphql(query)(RequireAuth);
 };
 
-graphql(query)(RequireAuth);
